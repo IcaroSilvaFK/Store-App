@@ -71,7 +71,7 @@ export function LoginPage() {
               <button type="submit">Logar</button>
             </form>
           </FormProvider>
-          <Link to="/">Não possui conta?</Link>
+          <Link to="/register">Não possui conta?</Link>
         </div>
       </div>
     </main>

@@ -1,0 +1,36 @@
+@import "../../styles/imports.scss";
+
+.containerRegisterUser {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  background: #f8f7f7;
+}
+
+.containerImage {
+  img {
+    width: 560px;
+  }
+}
+.containerForm {
+  form {
+    width: 310px;
+  }
+}
+
+.containerMainRegister {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 30%;
+  div {
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-family: $fontFira;
+    }
+  }
+}
