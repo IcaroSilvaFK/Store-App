@@ -1,0 +1,57 @@
+@import "../../styles/imports.scss";
+
+.container {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 20px;
+
+  background-color: $gray900;
+  color: $white;
+  h1 {
+    font-size: 40px;
+    span {
+      color: $cyan300;
+      font-family: $fontFira;
+    }
+  }
+  nav {
+    width: 30%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    button {
+      padding: 10px;
+      border-radius: 5px;
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        color: #fff;
+      }
+
+      transition: all 0.3s;
+
+      &:hover {
+        transform: translateY(2px);
+        filter: brightness(0.8);
+      }
+    }
+    .login {
+      background-color: $gray700;
+    }
+    .products {
+      background-color: $blue400;
+    }
+  }
+}
