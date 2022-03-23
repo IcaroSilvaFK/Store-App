@@ -8,6 +8,8 @@ import { Input } from "../../components/Input";
 
 import LoginIcon from "../../assets/login.svg";
 
+import "./styles.scss";
+
 export function LoginPage() {
   const [type, setType] = useState("password");
 
@@ -31,42 +33,45 @@ export function LoginPage() {
   }
 
   return (
-    <main>
-      <section>
-        <h2>Seção de Login</h2>
-      </section>
-      <div>
-        <div>
+    <main className="containerlogin">
+      <div className="containerMain">
+        <div className="containerImage">
           <img
             src={LoginIcon}
             alt="Imagen de Login com duas pessoas carregando uma chave"
           />
         </div>
-        <div>
+        <div className="separator"></div>
+        <div className="containerForm">
+          <h2>Login</h2>
           <FormProvider {...props}>
             <form onSubmit={props.handleSubmit(handleSingIn)}>
-              <div>
+              <div className="row">
                 <Input
                   name="email"
                   placeholder="Digite seu email"
                   type="email"
                 />
               </div>
-              <div>
-                <Input
-                  name="password"
-                  placeholder="Digite sua senha"
-                  type={type}
-                />
-                {type === "password" ? (
-                  <AiFillEye onClick={handleChangeInput} />
-                ) : (
-                  <AiFillEyeInvisible onClick={handleChangeInput} />
-                )}
+              <div className="column">
+                <div className="row">
+                  <Input
+                    name="password"
+                    placeholder="Digite sua senha"
+                    type={type}
+                  />
+                  {type === "password" ? (
+                    <AiFillEye onClick={handleChangeInput} />
+                  ) : (
+                    <AiFillEyeInvisible onClick={handleChangeInput} />
+                  )}
+                </div>
+                <Link to="/">Esqueceu sua senha ?</Link>
               </div>
               <button type="submit">Logar</button>
             </form>
           </FormProvider>
+          <Link to="/">Não possui conta?</Link>
         </div>
       </div>
     </main>
