@@ -1,0 +1,87 @@
+@import "../styles/imports.scss";
+.popout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    .containerInfo {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #000;
+        width: 500px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        position: relative;
+        .containerInformation {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.containerButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    button {
+        background-color: transparent;
+    }
+    .containerbuttonprincipais {
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+    }
+    .addquantid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+.containerTitle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.containerButtonsFavorite {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    gap: 10px;
+    button {
+        background: transparent;
+    }
+}
+
+.closeModal {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    background-color: #e53e3e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

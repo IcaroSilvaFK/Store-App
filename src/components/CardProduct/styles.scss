@@ -1,0 +1,18 @@
+@import "../../styles/imports.scss";
+.containerCard {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .containerButtons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 30px;
+        margin-top: 10px;
+        button {
+            background-color: transparent;
+        }
+    }
+}

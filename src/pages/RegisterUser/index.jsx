@@ -22,7 +22,7 @@ export function RegisterUser() {
 
   function handleCreateNewUser(data) {
     console.log(data);
-    navigate("/home");
+    navigate("/products");
   }
 
   function handleChangeInput() {

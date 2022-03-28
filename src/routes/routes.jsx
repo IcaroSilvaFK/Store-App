@@ -10,7 +10,7 @@ export function RoutesApplication() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Products />} />
+        <Route path="/products" element={<Products />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterUser />} />
       </Routes>

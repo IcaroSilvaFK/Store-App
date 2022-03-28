@@ -7,7 +7,7 @@ export function Input({ name, placeholder, type }) {
       control={control}
       name={name}
       render={({ field }) => (
-        <input id={name} type={type} {...field} placeholder={placeholder} />
+        <input type={type} {...field} placeholder={placeholder} />
       )}
     />
   );

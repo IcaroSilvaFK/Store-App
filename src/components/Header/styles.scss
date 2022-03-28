@@ -1,45 +1,55 @@
 @import "../../styles/imports.scss";
-
 .containerHeader {
-  display: flex;
-  justify-content: space-between;
-
-  padding: 20px 80px;
-
-  border: 1px solid $gray300;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    border: 1px solid $gray300;
 }
 
 .containerHeaderLogo {
-  display: flex;
-  align-items: center;
-
-  strong {
-    font-size: 18px;
-
-    color: $green;
-  }
+    display: flex;
+    align-items: center;
+    strong {
+        font-size: 18px;
+        color: $green;
+    }
 }
 
 .containerHeaderNav {
-  display: flex;
-  align-items: center;
-  ul {
     display: flex;
-
-    gap: 20px;
-
-    li {
-      a {
-        padding: 10px;
-
-        svg {
-          transition: transform 0.3s;
-
-          &:hover {
-            transform: scale(1.1);
-          }
+    align-items: center;
+    ul {
+        display: flex;
+        gap: 30px;
+        li {
+            button {
+                position: relative;
+                background-color: transparent;
+                .notification {
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    background-color: #e53e3e;
+                    border-radius: 50%;
+                    color: $white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .none {
+                    display: none;
+                }
+                svg {
+                    transition: transform 0.3s;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
